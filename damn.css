@@ -2,8 +2,32 @@
     box-sizing: content-box;
 }
 
-body{
+html, body{
     background-color: purple;
     color: wheat;
+    height: 80%;
 }
 
+.caja{
+    display: grid;
+    grid-template-columns: 300px repeat(3, 0.5fr);
+    height: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    gap: 5px;
+    background-color: red;
+}
+
+.colu{
+    border-radius: 10px;
+    background-color: greenyellow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.4s ease-in-out;
+}
+
+.colu:hover{
+    margin: 10px;
+    background-color: green;
+}
